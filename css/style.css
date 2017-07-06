@@ -1,0 +1,88 @@
+body {
+	display: inline-block;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	background-color: aliceblue;
+}
+
+
+
+#content {
+	display: inline;
+	width: 70vw;
+}
+
+.jumbotron { 
+    color: #ffffff;
+	padding: 100px 25px;
+	background-image: url(../img/ChapelHill.png);
+	padding-top: 15%;
+    padding-bottom: 50vh;
+}
+.jumbotron h1 {
+/*
+	margin-left: 35vw;
+	//margin-right: 35vw;
+*/
+	text-align: center;
+	font-weight: bold;
+	font-size: 10em;
+}
+
+.container-fluid {
+      padding: 60px 50px;
+  }
+
+.WellPic {
+	max-width:32vw; 
+	padding-right: 15px;
+}
+#EnergyMgmt{
+	max-width:32vw; 
+
+}
+#BenPic {
+	max-width: 19vw;
+}
+
+#employment{
+	padding-left: 10%;
+}
+
+#aboutMe{
+	padding-left: 10%;
+}
+
+.EnergyTitle{
+	display: inline-block;
+	float: right;
+}
+h4 {
+	display: inline-block;
+}
+
+#gears {
+	margin-top: 8vh;
+}
+
+footer {
+   bottom: 100%;
+}
+
+.middle {
+	padding-left: 25vw;
+}
+
+div.EnergyTitle {
+	font-weight: 600;
+}
+
+#waypoint {
+	//opacity: 0;
+}
+
+nav div.container-fluid{
+	max-height: 5vh;
+	padding-top: 1vh;
+}

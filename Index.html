@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<script rel="stylesheet" href="js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="css/style.css">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/script.js"></script>
+<meta charset="utf-8">
+<style type="text/css">div.image {max-width: 256px;max-height: 256px;background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyNy42OTEgMzI3LjY5MSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzI3LjY5MSAzMjcuNjkxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPHBhdGggZD0iTTIyMy41NjUsNTEuMTExQzIyMy41NjUsMjIuODgzLDIwMC42ODMsMCwxNzIuNDQ2LDBoLTMwLjY2N2MtMjguMjM2LDAtNTEuMTEzLDIyLjg4My01MS4xMTMsNTEuMTExdjE3Ljk1M2g2NS45MzN2MTQuNDU2ICAgbC05Ni42NDIsMC4wNDFjLTI4LjIyOSwwLTUxLjExMSwyMi44ODMtNTEuMTExLDUxLjEydjMwLjY2NmMwLDI4LjIyOSwyMi44ODMsNTEuMTEyLDUxLjExMSw1MS4xMTJoMjkuMzQ0di01OS4wMDZoMTM0LjI4NSAgIEwyMjMuNTY1LDUxLjExMXogTTExNy4yMTMsNTMuNjYxYy00LjExMiwwLTcuNDQ0LTMuMzMyLTcuNDQ0LTcuNDM4YzAtNC4xMSwzLjMzMi03LjQ0NCw3LjQ0NC03LjQ0NCAgIGM0LjEwNSwwLDcuNDM4LDMuMzM0LDcuNDM4LDcuNDQ0QzEyNC42NSw1MC4zMjksMTIxLjMxOCw1My42NjEsMTE3LjIxMyw1My42NjF6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNMjY3LjczNCwxMTEuMjMxaC0yOS4zNDR2NTkuMDA2SDEwNC4xMDVsMC4wMjEsMTA2LjM0M2MwLDI4LjIyOCwyMi44ODMsNTEuMTExLDUxLjExOSw1MS4xMTFoMzAuNjY3ICAgYzI4LjIzNiwwLDUxLjExMy0yMi44ODMsNTEuMTEzLTUxLjExMXYtMTcuOTUzaC02NS45MzN2LTE0LjQ1Nmw5Ni42NDItMC4wNDFjMjguMjI4LDAsNTEuMTExLTIyLjg4Myw1MS4xMTEtNTEuMTE5di0zMC42NjcgICBDMzE4Ljg0NiwxMzQuMTE0LDI5NS45NjMsMTExLjIzMSwyNjcuNzM0LDExMS4yMzF6IE0yMTAuNDc5LDI3NC4wM2M0LjExMywwLDcuNDQ0LDMuMzMyLDcuNDQ0LDcuNDM4ICAgYzAsNC4xMS0zLjMzMSw3LjQ0NC03LjQ0NCw3LjQ0NGMtNC4xMDUsMC03LjQzOC0zLjMzNC03LjQzOC03LjQ0NEMyMDMuMDQxLDI3Ny4zNjIsMjA2LjM3NCwyNzQuMDMsMjEwLjQ3OSwyNzQuMDN6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==)}</style>
+<title>Ben Lu</title>
+</head>
+
+<body>
+<nav id="navBar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ben Lu</a>
+    </div>
+    <ul id="navlist" class="nav navbar-nav">
+      <li class="active"><a href="#firstFade">About Me</a></li>
+      <li><a href="#employment">Employment and Skills</a></li>
+      <li><a href="#fifthFade">Projects</a></li>
+      <li><a href="#lastFade">Activities and Volunteering</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <h1>Hi, I'm Benjamin Lu.</h1> 
+  <p></p> 
+</div>
+
+
+
+
+<div class="container-fluid" id="firstFade">
+  <div class="row">
+    <div id="aboutMe" class="col-sm-8">
+      <h2>About Me</h2>
+      <h4>I am a rising Sophomore at the University of North Carolina at Chapel Hill double majoring in Computer Science and Statistics. My passion is to construe the needs of society using analytics and some TLC.</h4>      
+ 
+    </div>
+    
+    <div class="col-sm-4">
+      <img id="BenPic" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAk_AAAAJDBmMmUzNGIwLWJjMjItNDcwZS05NTAzLTc2YjgyZDc1YmRjZQ.jpg" alt="">
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="container-fluid bg-grey" id="secondFade">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="WellPic" src="http://jdkern.web.unc.edu/files/2013/12/unc_logo_c_32a691.jpg" alt="">
+    </div>
+    <div class="col-sm-8">
+      <h2>Education</h2>
+      <h4><strong>University of North Carolina at Chapel Hill </strong></h4>      
+      	<ul><li>BS Statistics and Operations Research 2020 </li>
+      	<li>BS Computer Science 2020</li>
+      	<li>3.59 GPA (Dean's List)</li>
+      </ul>
+      
+      <h4><strong>University of North Carolina at Wilmington </strong></h4>      
+      	<ul><li>Dual enrolled as a high school student</li>
+      	<li>4.0 GPA</li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container-fluid-Employment">
+  <div class="middle">
+  	    <div id="employment" class="col-sm-8">
+      <h2>Employment</h2>
+      
+		<div class="fuuck"><h4><strong>UNC Energy Management <br>Data Manager/Analyst </strong> </h4>
+      <div class="EnergyTitle"> Nov 2016- Present</div>
+      </div>    
+       
+      	<ul><li>Managing the usage of utilities throughout the entire UNC campus</li>
+      	<li>Optimizing databases of utility usage of over 200 properties using Java API</li>
+      	<li>Educating the campus through outreach in order to make conservation a core value at UNC)</li>
+      </ul>
+      
+      <div class="fuuck"><h4><strong>JoyRun</strong> </h4>
+      <div class="EnergyTitle"> Aug 2016- Feb 2017</div>
+      </div>      
+      	<ul><li>Lead on-campus outreach at UNC and networked with 50+ student organizations</li>
+      	<li>Achieved over 3,000 active users through on-campus marketing and employing social media in a matter of months</li>
+      	<li>Developed partnerships with local restaurants for mutualistic benefit.</li>
+      </ul>
+      
+    </div>
+ 
+    <div id="Skills" class="col-sm-8 col-lg-9">
+    <div class="container-fluid text-center">
+  <h2>SKILLS</h2>
+  <h4>Languages</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDUuMDAxIDMwNS4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNS4wMDEgMzA1LjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8ZyBpZD0iWE1MSURfN18iPgoJPHBhdGggaWQ9IlhNTElEXzhfIiBkPSJNMTUwLjk5LDU2LjUxM2MtMTQuMDkzLDkuOTEyLTMwLjA2NiwyMS4xNDctMzguNjI0LDM5LjczNGMtMTQuODY1LDMyLjQyNiwzMC40MTgsNjcuNzk4LDMyLjM1Myw2OS4yODggICBjMC40NSwwLjM0NywwLjk4OCwwLjUxOSwxLjUyNSwwLjUxOWMwLjU3LDAsMS4xNDEtMC4xOTUsMS42MDUtMC41ODNjMC44OTktMC43NTIsMS4xNTQtMi4wMjksMC42MTQtMy4wNjkgICBjLTAuMTY0LTAuMzE2LTE2LjQxOC0zMS44ODgtMTUuODE0LTU0LjUzOWMwLjIxNC03Ljg4OCwxMS4yNTQtMTYuODM3LDIyLjk0Mi0yNi4zMTJjMTAuNzA1LTguNjc4LDIyLjgzOS0xOC41MTQsMjkuOTM5LTMwLjAyICAgYzE1LjU4Ni0yNS4zMjctMS43MzctNTAuMjMxLTEuOTE0LTUwLjQ3OWMtMC42ODgtMC45NjYtMS45NTgtMS4zMTctMy4wNDQtMC44NGMtMS4wODUsMC40NzgtMS42ODYsMS42NTItMS40MzgsMi44MTEgICBjMC4wMzUsMC4xNjQsMy40MDQsMTYuNjMzLTUuOTcsMzMuNkMxNjkuMzAxLDQzLjYzNCwxNjAuODE2LDQ5LjYwMywxNTAuOTksNTYuNTEzeiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggaWQ9IlhNTElEXzlfIiBkPSJNMjEwLjM2NSw2Ny42ODJjMC45OTQtMC43NDksMS4yODYtMi4xMTUsMC42ODQtMy4yMDVjLTAuNjAyLTEuMDktMS45MTMtMS41NzEtMy4wNzctMS4xMjkgICBjLTIuMzk0LDAuOTEtNTguNjI3LDIyLjU4NS01OC42MjcsNDguNzc2YzAsMTguMDUzLDcuNzEyLDI3LjU5MSwxMy4zNDMsMzQuNTU2YzIuMjA5LDIuNzMxLDQuMTE2LDUuMDksNC43NDQsNy4xMDQgICBjMS43NjksNS44MDQtMi40MjIsMTYuMjk0LTQuMTg0LDE5Ljg0NmMtMC41MDgsMS4wMjItMC4yNTksMi4yNTksMC42MDUsMy4wMDVjMC40NjcsMC40MDMsMS4wNSwwLjYwNywxLjYzNCwwLjYwNyAgIGMwLjQ5NywwLDAuOTk2LTAuMTQ4LDEuNDI3LTAuNDQ4YzAuOTY3LTAuNjczLDIzLjYzLTE2LjY5NiwxOS41NjUtMzYuMDAxYy0xLjUxNC03LjMzNy01LjEyLTEyLjY5OS04LjMwMi0xNy40MyAgIGMtNC45MjktNy4zMjktOC40ODktMTIuNjI0LTMuMDg4LTIyLjQwM0MxODEuNDE5LDg5LjU1NiwyMTAuMDc2LDY3Ljg5OSwyMTAuMzY1LDY3LjY4MnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGlkPSJYTUxJRF8xMF8iIGQ9Ik02My45OSwxNzcuNjU5Yy0wLjk2NCwyLjg4NS0wLjUwOSw1Ljc1LDEuMzE1LDguMjgzYzYuMDk2LDguNDYyLDI3LjY4OCwxMy4xMjMsNjAuODAyLDEzLjEyMyAgIGMwLjAwMiwwLDAuMDAzLDAsMC4wMDQsMGM0LjQ4NywwLDkuMjI0LTAuMDg4LDE0LjA3Ni0wLjI2MmM1Mi45NDMtMS44OTYsNzIuNTgtMTguMzg5LDczLjM5LTE5LjA5ICAgYzAuODgzLTAuNzY0LDEuMTE5LTIuMDM3LDAuNTctMy4wNjdjLTAuNTQ5LTEuMDI5LTEuNzMzLTEuNTQ2LTIuODY0LTEuMjM1Yy0xOC42NDUsNS4wOTEtNTMuNDYzLDYuODk4LTc3LjYxMyw2Ljg5OCAgIGMtMjcuMDIzLDAtNDAuNzg1LTEuOTQ2LTQ0LjE1NC0zLjM4M2MxLjcyOS0yLjM3NCwxMi4zOTItNi42MTMsMjUuNjA1LTkuMjEyYzEuMjYzLTAuMjQ4LDIuMTMxLTEuNDE0LDIuMDA2LTIuNjk1ICAgYy0wLjEyNS0xLjI4MS0xLjIwMS0yLjI1OC0yLjQ4OC0yLjI1OEMxMDYuODkzLDE2NC43NjIsNjguMDUsMTY1LjM4NCw2My45OSwxNzcuNjU5eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggaWQ9IlhNTElEXzExXyIgZD0iTTI0MS4xNDgsMTYwLjY3M2MtMTAuOTIsMC0yMS4yNzUsNS40NzItMjEuNzExLDUuNzA1Yy0xLjAxLDAuNTQxLTEuNTIyLDEuNjk5LTEuMjQ1LDIuODExICAgYzAuMjc4LDEuMTExLDEuMjc3LDEuODkyLDIuNDIzLDEuODkzYzAuMjMyLDAuMDAxLDIzLjI5MywwLjE4OSwyNS4zODIsMTMuMzY1YzEuODUsMTEuMzY3LTIxLjgyLDI5Ljc4NS0zMS4wOTcsMzUuOTIzICAgYy0xLjAwMiwwLjY2My0xLjM5MSwxLjk0NS0wLjkyNiwzLjA1MmMwLjM5NSwwLjk0MywxLjMxNCwxLjUzMywyLjMwNCwxLjUzM2MwLjE3MywwLDAuMzQ4LTAuMDE4LDAuNTIyLTAuMDU2ICAgYzIuMjAyLTAuNDcsNTMuODU1LTExLjg1Miw0OC4zOTQtNDEuOTI3QzI2MS44NjIsMTY0LjU0MSwyNTAuMjc4LDE2MC42NzMsMjQxLjE0OCwxNjAuNjczeiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggaWQ9IlhNTElEXzEyXyIgZD0iTTIwNS43MjUsMjE2LjY5YzAuMTgtMC45NjQtMC4yMjEtMS45NDQtMS4wMjMtMi41MDZsLTEyLjM4NS04LjY3NWMtMC42MDQtMC40MjMtMS4zNjctMC41NTYtMi4wNzYtMC4zNjggICBjLTAuMTI5LDAuMDM0LTEzLjA4MSwzLjQzOC0zMS44ODUsNS41MjZjLTcuNDYzLDAuODM3LTE1LjgyMiwxLjI3OS0yNC4xNzUsMS4yNzljLTE4Ljc5OSwwLTMxLjA5MS0yLjIwOS0zMi44ODEtMy44MjkgICBjLTAuMjM3LTAuNDU1LTAuMTYyLTAuNjYyLTAuMTItMC43NzdjMC4zMjUtMC45MDUsMi4wNjgtMS45OCwzLjE5Mi0yLjQwNWMxLjI0MS0wLjQ1OSwxLjkxLTEuODA3LDEuNTI0LTMuMDczICAgYy0wLjM4NS0xLjI2Ni0xLjY5LTIuMDEyLTIuOTc4LTEuNzAyYy0xMi40MjQsMi45OTgtMTguNDk5LDcuMTkxLTE4LjA1NywxMi40NjFjMC43ODUsOS4zNDMsMjIuNDI4LDE0LjEzOSw0MC43MjUsMTUuNDA4ICAgYzIuNjMxLDAuMTgsNS40NzcsMC4yNzIsOC40NTYsMC4yNzJjMC4wMDIsMCwwLjAwMywwLDAuMDA1LDBjMzAuNDI1LDAsNjkuNDI5LTkuNTQ2LDY5LjgxOS05LjY0MyAgIEMyMDQuODE4LDIxOC40MjMsMjA1LjU0NCwyMTcuNjU0LDIwNS43MjUsMjE2LjY5eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggaWQ9IlhNTElEXzEzXyIgZD0iTTExMi4zNTEsMjM2Ljc0NWMwLjkzOC0wLjYxMSwxLjM1NC0xLjc3LDEuMDIxLTIuODM4Yy0wLjMzMi0xLjA2OC0xLjMzMS0xLjc2OS0yLjQ1My0xLjc1NSAgIGMtMS42NjUsMC4wNDQtMTYuMjkyLDAuNzA0LTE3LjMxNiwxMC4wMTdjLTAuMzEsMi43ODMsMC40ODcsNS4zMjUsMi4zNyw3LjU1NmM1LjI1Miw2LjIyNCwxOS40MjgsOS45MjMsNDMuMzMyLDExLjMxICAgYzIuODI4LDAuMTY5LDUuNywwLjI1NCw4LjUzOSwwLjI1NGMzMC4zOSwwLDUwLjg1Ny05LjUxNSw1MS43MTQtOS45MmMwLjgzMS0wLjM5MywxLjM3OS0xLjIwOSwxLjQyOC0yLjEyNyAgIGMwLjA0OS0wLjkxNy0wLjQwOS0xLjc4OC0xLjE5My0yLjI2N2wtMTUuNjUyLTkuNTU1Yy0wLjU0My0wLjMzMS0xLjE5My0wLjQ0MS0xLjgxMy0wLjMxNGMtMC4wOTksMC4wMjEtMTAuMDM3LDIuMDgyLTI1LjAzNSw0LjExOSAgIGMtMi44MzgsMC4zODUtNi4zOTIsMC41ODEtMTAuNTYyLDAuNTgxYy0xNC45ODIsMC0zMS42NDYtMi40NDgtMzQuODQyLTQuMDVDMTExLjg0MywyMzcuNDU1LDExMS45MDIsMjM3LjA3NSwxMTIuMzUxLDIzNi43NDV6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBpZD0iWE1MSURfMTRfIiBkPSJNMTMzLjY4MSwyOTAuMDE4YzY5LjYxLTAuMDU5LDEwNi45NzEtMTIuNDM4LDExNC4xNjgtMjAuMjI4YzIuNTQ4LTIuNzU3LDIuODIzLTUuMzY2LDIuNjA2LTcuMDcgICBjLTAuNTM1LTQuMTk0LTQuMzU0LTYuNzYxLTQuNzg4LTcuMDRjLTEuMDQ1LTAuNjcyLTIuNDQ3LTAuNDk2LTMuMjYyLDAuNDQ0Yy0wLjgxMywwLjk0MS0wLjgzMiwyLjMxNC0wLjAxNiwzLjI1MyAgIGMwLjQzOSwwLjU2NSwwLjY5MywxLjUxLTAuNTkxLDIuNzk1Yy0yLjg3NywyLjY4Ny0zMS44OTcsMTAuODQ0LTgwLjIxNSwxMy4yOTRjLTYuNjE5LDAuMzQ1LTEzLjU2MSwwLjUxOS0yMC42MzMsMC41MiAgIGMtNDMuMjYyLDAtNzQuOTIzLTUuOTI1LTc5LjA3OS05LjM3OWMxLjYwMy0yLjMwMSwxMi44MDEtNS45NzksMjQuNzExLTguMDU4YzEuMzQyLTAuMjM0LDIuMjQ5LTEuNDk5LDIuMDQxLTIuODQ1ICAgYy0wLjIwOC0xLjM0Ni0xLjQ0OS0yLjI3My0yLjgwNS0yLjA5NmMtMC4zMzYsMC4wNDUtMS40NzUsMC4xMTUtMi43OTYsMC4xOTVjLTE5LjY1MSwxLjItNDIuMzYsMy44NzUtNDMuNTQ1LDEzLjk5OSAgIGMtMC4zNiwzLjA4NiwwLjU1Nyw1Ljg4NiwyLjcyNiw4LjMyNGM1LjMwNyw1Ljk2MywyMC41NjIsMTMuODkxLDkxLjQ3NSwxMy44OTFDMTMzLjY4LDI5MC4wMTgsMTMzLjY4LDI5MC4wMTgsMTMzLjY4MSwyOTAuMDE4eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggaWQ9IlhNTElEXzE1XyIgZD0iTTI2MS41MjIsMjcxLjk4NWMtMC45ODQtMC40NTUtMi4xNDYtMC4yMjUtMi44ODEsMC41NjdjLTAuMTAzLDAuMTEtMTAuNTY4LDExLjA1NC00Mi4wMzUsMTcuNDggICBjLTEyLjA0NywyLjQxNC0zNC42NiwzLjYzOC02Ny4yMTEsMy42MzhjLTMyLjYxMiwwLTYzLjY0My0xLjI4My02My45NTMtMS4yOTZjLTEuMjk2LTAuMDYzLTIuNDA1LDAuODc5LTIuNTgxLDIuMTU1ICAgYy0wLjE3NywxLjI3NiwwLjY0NSwyLjQ3NywxLjg5NywyLjc3NWMwLjMyMywwLjA3NywzMi44NDQsNy42OTYsNzcuMzEsNy42OTZjMjEuMzI3LDAsNDIuMDgtMS43MzMsNjEuNjg0LTUuMTUxICAgYzM2LjU1My02LjQwOCwzOS4xMTItMjQuNTMzLDM5LjIwMy0yNS4zMDFDMjYzLjA4MiwyNzMuNDc0LDI2Mi41MDQsMjcyLjQ0LDI2MS41MjIsMjcxLjk4NXoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+      <h4>Java</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart"></span>
+      <h4>HTML/CSS/JS</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMyNy42OTEgMzI3LjY5MSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzI3LjY5MSAzMjcuNjkxOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPHBhdGggZD0iTTIyMy41NjUsNTEuMTExQzIyMy41NjUsMjIuODgzLDIwMC42ODMsMCwxNzIuNDQ2LDBoLTMwLjY2N2MtMjguMjM2LDAtNTEuMTEzLDIyLjg4My01MS4xMTMsNTEuMTExdjE3Ljk1M2g2NS45MzN2MTQuNDU2ICAgbC05Ni42NDIsMC4wNDFjLTI4LjIyOSwwLTUxLjExMSwyMi44ODMtNTEuMTExLDUxLjEydjMwLjY2NmMwLDI4LjIyOSwyMi44ODMsNTEuMTEyLDUxLjExMSw1MS4xMTJoMjkuMzQ0di01OS4wMDZoMTM0LjI4NSAgIEwyMjMuNTY1LDUxLjExMXogTTExNy4yMTMsNTMuNjYxYy00LjExMiwwLTcuNDQ0LTMuMzMyLTcuNDQ0LTcuNDM4YzAtNC4xMSwzLjMzMi03LjQ0NCw3LjQ0NC03LjQ0NCAgIGM0LjEwNSwwLDcuNDM4LDMuMzM0LDcuNDM4LDcuNDQ0QzEyNC42NSw1MC4zMjksMTIxLjMxOCw1My42NjEsMTE3LjIxMyw1My42NjF6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNMjY3LjczNCwxMTEuMjMxaC0yOS4zNDR2NTkuMDA2SDEwNC4xMDVsMC4wMjEsMTA2LjM0M2MwLDI4LjIyOCwyMi44ODMsNTEuMTExLDUxLjExOSw1MS4xMTFoMzAuNjY3ICAgYzI4LjIzNiwwLDUxLjExMy0yMi44ODMsNTEuMTEzLTUxLjExMXYtMTcuOTUzaC02NS45MzN2LTE0LjQ1Nmw5Ni42NDItMC4wNDFjMjguMjI4LDAsNTEuMTExLTIyLjg4Myw1MS4xMTEtNTEuMTE5di0zMC42NjcgICBDMzE4Ljg0NiwxMzQuMTE0LDI5NS45NjMsMTExLjIzMSwyNjcuNzM0LDExMS4yMzF6IE0yMTAuNDc5LDI3NC4wM2M0LjExMywwLDcuNDQ0LDMuMzMyLDcuNDQ0LDcuNDM4ICAgYzAsNC4xMS0zLjMzMSw3LjQ0NC03LjQ0NCw3LjQ0NGMtNC4xMDUsMC03LjQzOC0zLjMzNC03LjQzOC03LjQ0NEMyMDMuMDQxLDI3Ny4zNjIsMjA2LjM3NCwyNzQuMDMsMjEwLjQ3OSwyNzQuMDN6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+      <h4>Python</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    </div>
+    
+    
+    
+    <h4>Tools</h4>
+    
+  <div class="row">
+   
+    <div class="col-sm-4">
+     
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI2IDI2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNiAyNjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yNS4xNjIsM0gxNnYyLjk4NGgzLjAzMXYyLjAzMUgxNlYxMGgzdjJoLTN2MmgzdjJoLTN2MmgzdjJoLTN2M2g5LjE2MiAgIEMyNS42MjMsMjMsMjYsMjIuNjA5LDI2LDIyLjEzVjMuODdDMjYsMy4zOTEsMjUuNjIzLDMsMjUuMTYyLDN6IE0yNCwyMGgtNHYtMmg0VjIweiBNMjQsMTZoLTR2LTJoNFYxNnogTTI0LDEyaC00di0yaDRWMTJ6IE0yNCw4ICAgaC00VjZoNFY4eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTAsMi44ODl2MjAuMjIzTDE1LDI2VjBMMCwyLjg4OXogTTkuNDg4LDE4LjA4bC0xLjc0NS0zLjI5OWMtMC4wNjYtMC4xMjMtMC4xMzQtMC4zNDktMC4yMDUtMC42NzggICBINy41MTFDNy40NzgsMTQuMjU4LDcuNCwxNC40OTQsNy4yNzcsMTQuODFsLTEuNzUxLDMuMjdIMi44MDdsMy4yMjgtNS4wNjRMMy4wODIsNy45NTFoMi43NzZsMS40NDgsMy4wMzcgICBjMC4xMTMsMC4yNCwwLjIxNCwwLjUyNSwwLjMwNCwwLjg1NGgwLjAyOGMwLjA1Ny0wLjE5OCwwLjE2My0wLjQ5MiwwLjMxOC0wLjg4M2wxLjYxLTMuMDA5aDIuNTQybC0zLjAzNyw1LjAyMmwzLjEyMiw1LjEwNyAgIEw5LjQ4OCwxOC4wOEw5LjQ4OCwxOC4wOHoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+     
+      <h4>Excel</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>R</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4>Java API</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <h4>Marketing</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off"></span>
+      <h4>Advertising</h4>
+      <p>Advertising through social media</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU1IDU1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1NSA1NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cGF0aCBkPSJNNDksMGMtMy4zMDksMC02LDIuNjkxLTYsNmMwLDEuMDM1LDAuMjYzLDIuMDA5LDAuNzI2LDIuODZsLTkuODI5LDkuODI5QzMyLjU0MiwxNy42MzQsMzAuODQ2LDE3LDI5LDE3ICBzLTMuNTQyLDAuNjM0LTQuODk4LDEuNjg4bC03LjY2OS03LjY2OUMxNi43ODUsMTAuNDI0LDE3LDkuNzQsMTcsOWMwLTIuMjA2LTEuNzk0LTQtNC00UzksNi43OTQsOSw5czEuNzk0LDQsNCw0ICBjMC43NCwwLDEuNDI0LTAuMjE1LDIuMDE5LTAuNTY3bDcuNjY5LDcuNjY5QzIxLjYzNCwyMS40NTgsMjEsMjMuMTU0LDIxLDI1czAuNjM0LDMuNTQyLDEuNjg4LDQuODk3TDEwLjAyNCw0Mi41NjIgIEM4Ljk1OCw0MS41OTUsNy41NDksNDEsNiw0MWMtMy4zMDksMC02LDIuNjkxLTYsNnMyLjY5MSw2LDYsNnM2LTIuNjkxLDYtNmMwLTEuMDM1LTAuMjYzLTIuMDA5LTAuNzI2LTIuODZsMTIuODI5LTEyLjgyOSAgYzEuMTA2LDAuODYsMi40NCwxLjQzNiwzLjg5OCwxLjYxOXYxMC4xNmMtMi44MzMsMC40NzgtNSwyLjk0Mi01LDUuOTFjMCwzLjMwOSwyLjY5MSw2LDYsNnM2LTIuNjkxLDYtNmMwLTIuOTY3LTIuMTY3LTUuNDMxLTUtNS45MSAgdi0xMC4xNmMxLjQ1OC0wLjE4MywyLjc5Mi0wLjc1OSwzLjg5OC0xLjYxOWw3LjY2OSw3LjY2OUM0MS4yMTUsMzkuNTc2LDQxLDQwLjI2LDQxLDQxYzAsMi4yMDYsMS43OTQsNCw0LDRzNC0xLjc5NCw0LTQgIHMtMS43OTQtNC00LTRjLTAuNzQsMC0xLjQyNCwwLjIxNS0yLjAxOSwwLjU2N2wtNy42NjktNy42NjlDMzYuMzY2LDI4LjU0MiwzNywyNi44NDYsMzcsMjVzLTAuNjM0LTMuNTQyLTEuNjg4LTQuODk3bDkuNjY1LTkuNjY1ICBDNDYuMDQyLDExLjQwNSw0Ny40NTEsMTIsNDksMTJjMy4zMDksMCw2LTIuNjkxLDYtNlM1Mi4zMDksMCw0OSwweiBNMTEsOWMwLTEuMTAzLDAuODk3LTIsMi0yczIsMC44OTcsMiwycy0wLjg5NywyLTIsMiAgUzExLDEwLjEwMywxMSw5eiBNNiw1MWMtMi4yMDYsMC00LTEuNzk0LTQtNHMxLjc5NC00LDQtNHM0LDEuNzk0LDQsNFM4LjIwNiw1MSw2LDUxeiBNMzMsNDljMCwyLjIwNi0xLjc5NCw0LTQsNHMtNC0xLjc5NC00LTQgIHMxLjc5NC00LDQtNFMzMyw0Ni43OTQsMzMsNDl6IE0yOSwzMWMtMy4zMDksMC02LTIuNjkxLTYtNnMyLjY5MS02LDYtNnM2LDIuNjkxLDYsNlMzMi4zMDksMzEsMjksMzF6IE00Nyw0MWMwLDEuMTAzLTAuODk3LDItMiwyICBzLTItMC44OTctMi0yczAuODk3LTIsMi0yUzQ3LDM5Ljg5Nyw0Nyw0MXogTTQ5LDEwYy0yLjIwNiwwLTQtMS43OTQtNC00czEuNzk0LTQsNC00czQsMS43OTQsNCw0UzUxLjIwNiwxMCw0OSwxMHoiIGZpbGw9IiMwMDAwMDAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+      <h4>Networking</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4NC4wMjcgNDg0LjAyNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg0LjAyNyA0ODQuMDI3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik0zOTkuNjg1LDE4My4xNThjMzUuMzU1LDAsNjMuNzg1LTI4LjUxNyw2My43ODUtNjMuNjk5YzAtMzUuMjA0LTI4LjQ1Mi02My43NjMtNjMuNzg1LTYzLjc2MyAgICAgYy0zNS4xMzksMC02My42MTIsMjguNTM4LTYzLjYxMiw2My43NjNDMzM2LjA3MywxNTQuNjE5LDM2NC41NDYsMTgzLjE1OCwzOTkuNjg1LDE4My4xNTh6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik00NTAuODI5LDE5My41MzNIMzQ4LjY3Yy0xNS4xNjQsMC0yNy45MzQsMTEuNzEzLTMxLjg2LDI3LjQ2bC02MC42NTcsMTI0LjE4M2MtMC44NjMtMC4wNjUtMS41OTYtMC40OTYtMi40ODEtMC40OTYgICAgIEgyMzAuMjljLTAuODYzLDAtMS42MTgsMC40NTMtMi40MzgsMC40OTZsLTYwLjY1Ny0xMjQuMTYxYy0zLjkwNC0xNS43NDctMTYuNjUzLTI3LjQ4MS0zMS44MzgtMjcuNDgxSDMzLjEzMyAgICAgQzE0Ljg2MiwxOTMuNTMzLDAsMjEwLjI5NCwwLDIzMC44NTF2MTk3LjQ4aDE2OC41MTFWMzE2LjIyOGwzNi44LDY4LjAzNGMzLjU1OSwxMS44MjEsMTMuMjg4LDIwLjM4NCwyNS4wMDEsMjAuMzg0aDIzLjM4MyAgICAgYzExLjcxMywwLDIxLjQ2My04LjU2NCwyNS4wNDQtMjAuMzg0bDM2Ljc3OC02OC4wMzR2MTEyLjEwM2gxNjguNTExVjIzMC44NUM0ODQuMDA1LDIxMC4yOTQsNDY5LjEyMSwxOTMuNTMzLDQ1MC44MjksMTkzLjUzM3oiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTg0LjI5OSwxODMuMTU4YzM1LjEzOSwwLDYzLjYxMi0yOC41MTcsNjMuNjEyLTYzLjY5OWMwLjAyMi0zNS4yMjUtMjguNDUyLTYzLjc2My02My42MTItNjMuNzYzICAgICBjLTM1LjMxMSwwLTYzLjc4NSwyOC41MzgtNjMuNzg1LDYzLjc2M0MyMC41MTQsMTU0LjYxOSw0OC45ODcsMTgzLjE1OCw4NC4yOTksMTgzLjE1OHoiIGZpbGw9IiMwMDAwMDAiLz4KCQk8L2c+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+      <h4>Partnerships</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    </div>
+    
+  
+</div>
+  
+  
+   
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid" id="fifthFade">
+   	
+<div class="row">
+   
+    <div class="col-sm-4">
+      <img class="WellPic" src="img/gear-1294844_1280.png" alt="">
+    </div>
+    <div class="col-sm-8">
+      <h2>Projects</h2>
+      <div class="fuuck">
+            <h4><strong>UNCW IDEAL Lab</strong></h4>
+            <div class="EnergyTitle"> Summer 2015- Current</div>
+          </div>
+          <ul>
+            <li>Organized and analyzed data from ~1000 military veterans from Camp Lejeune</li>
+            <li>Tested correlation between # of blasts and PTSD using TSI symptom inventory</li>
+            <li>Received poster recognition at UNCW Student Research Showcase</li>
+          </ul>
+      <div class="fuuck">
+            <h4><strong>Solar Water Pump (Eagle Scout Project)</strong></h4>
+            <div class="EnergyTitle"> Summer 2015- March 2016</div>
+          </div>
+          <ul>
+            <li>Lead a team to design a solar water pump for farmers and villages</li>
+            <li>Months of design and revision as well as field testing</li>
+            <li>Created 3D model of pump design using SolidWorks</li>
+          </ul>
+          <div class="fuuck">
+            <h4><strong>Chemtech Laboratory Research Team</strong></h4>
+            <div class="EnergyTitle"> Fall 2015- Current</div>
+          </div>
+          <ul>
+            <li>Conducted research on the concentration of parabens within local fast food</li>
+            <li>Worked in partnership with UNCW and Cape Fear Community College</li>
+            <li>Used HPLC and GCMS to win 1st place and $2500 for Hoggard High School</li>
+          </ul>
+    </div>
+  </div>
+   </div>
+   <hr>
+    <div class="container-fluid bg-grey">
+      <div id="lastFade" class="middle">
+        <div class="col-sm-8">
+          <h2>Activities</h2>
+          <div class="fuuck">
+            <h4><strong>Carolina Math Club</strong></h4>
+            <div class="EnergyTitle"> Apr 2017- Current</div>
+          </div>
+          <ul>
+            <li>Working with other leaders to make mathematics an enjoyable and engaging subject for all students</li>
+            <li>Head recruiter of new members to the club</li>
+            <li>Event coordinator of the largest math organization on campus</li>
+          </ul>
+        </div>
+        <div class="col-sm-8">
+          <h2>Volunteering</h2>
+          <div class="fuuck">
+            <h4><strong>Full Belly Project</strong></h4>
+            <div class="EnergyTitle"> Fall 2012- Summer 2016</div>
+          </div>
+          <ul>
+            <li>Non-profit organization specializing in agricultural sustainability</li>
+            <li>Developed inexpensive solutions for villages in third-world countries</li>
+            <li>Worked on design of Solar Water Pump, Rocker Water Pump, and Soap Press</li>
+          </ul>
+        </div>
+      </div>
+            
+  
+  
+    
+</div>
+   
+</div>
+
+
+
+
+</body>
+
+<div>
+	<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</div>
+</html>

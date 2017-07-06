@@ -1,0 +1,10 @@
+/* CSS Document */
+body {
+	background-image: url(../img/ChapelHill.png);
+}
+#InnerBox {
+	margin: 5vh 5vw;
+	background-color: aliceblue;
+	border-radius: 5px;
+	
+}
